@@ -24,16 +24,16 @@ include ':matrix-traffic'
 include ':matrix-backtrace'
 include ':matrix-hooks'
 include ':matrix-memguard'
-include ':matrix-jectl'
+include ':matrix-mallctl'
 include ':matrix-fd'
 
-// Benchmark
-include ':test:matrix-backtrace-benchmark'
-
-// TEST
-include ':test:test-backtrace'
-include ':test:test-memoryhook'
-include ':test:test-openglhook'
+//// Benchmark
+//include ':test:matrix-backtrace-benchmark'
+//
+//// TEST
+//include ':test:test-backtrace'
+//include ':test:test-memoryhook'
+//include ':test:test-openglhook'
 include ':matrix-memory-canary'
 
 if (gradle.staticLinkCXX()) {
